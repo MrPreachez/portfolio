@@ -1,4 +1,5 @@
 import "./HomePage.scss";
+import headshot from "../../assets/images/portfolio-copy.jpg"
 
 function HomePage() {
   return (
@@ -37,7 +38,7 @@ function HomePage() {
         <p>some text about me</p>
         <div className="about__imgContainer">
           <img
-            src="../../assets/images/portfolio-copy.jpg"
+            src={headshot}
             className="about__imgPhoto"
             alt="alt-text"
           />
