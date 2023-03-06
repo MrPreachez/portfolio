@@ -19,10 +19,29 @@ function HomePage() {
         </div>
       </section>
       <section className="projects__body">
-        <h2>Projects</h2>
+        <h2 className="projects__title">
+          <span className="projects__feature" />
+          Projects
+          <span className="projects__feature" />
+        </h2>
+        <div className="projects__card--wrapper">
+          <div className="projects__card1"></div>
+        </div>
       </section>
       <section className="about__body">
-        <h2>About</h2>
+        <h2 className="about__title">
+          <span className="about__feature" />
+          About
+          <span className="about__feature" />
+        </h2>
+        <p>some text about me</p>
+        <div className="about__imgContainer">
+          <img
+            src="../../assets/images/portfolio-copy.jpg"
+            className="about__imgPhoto"
+            alt="alt-text"
+          />
+        </div>
       </section>
       <section className="details__body">
         <h3>contact</h3>

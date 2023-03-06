@@ -6,13 +6,13 @@
 
 .homePage {
     &__body {
-        width: 100vw;
+        width: 100%;
         margin: 0 auto;
     }
 }
 .head {
     &__body {
-        height: 60vh;
+        height: 50vh;
         margin: 0 auto;
     }
     &__title-position {
@@ -47,11 +47,65 @@
         height: 40vh;
         background-color: $secondaryoffWhite;
         font-family: $font-stackB;
+        padding: 2rem 1rem;   
     }
+    &__title {
+        margin: 2rem ;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+  
+    &__feature{
+        border-top: 1px solid $secondaryGrey;
+        margin-top: 1.5rem;
+        width: 20rem;
+    }
+    &__card--wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    &__card1 {
+        width: 22rem;
+        height: 28rem;
+        // border: 1px solid $primaryBlack;
+        border-radius: 1rem;
+        box-shadow: 2px 2px 2px;
+        background-color: white;
+    }
+  
 }
 .about {
     &__body {
         height: 30vh;
+        font-family: $font-stackB;
+        padding: 2rem 1rem;
+    }
+    &__title {
+        margin: 2rem ;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    &__feature{
+        border-top: 1px solid $secondaryGrey;
+        margin-top: 1.5rem;
+        width: 20rem;
+    }
+    &__imgContainer {
+        width: 7rem;
+        height: 9rem;
+        border: 1px solid black;
+    }
+    &__imgPhoto {
+        // background-image:url("../../assets/images/portfolio-copy.jpg");
+        // background-repeat: no-repeat;
+        width:7rem;
+        
+        
+        
     }
 }
 .details {
