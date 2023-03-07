@@ -1,5 +1,5 @@
 import "./HomePage.scss";
-import headshot from "../../assets/images/portfolio-copy.jpg"
+import headshot from "../../assets/images/portfolio-copy.jpg";
 
 function HomePage() {
   return (
@@ -35,18 +35,21 @@ function HomePage() {
           About
           <span className="about__feature" />
         </h2>
-        <p>some text about me</p>
-        <div className="about__imgContainer">
-          <img
-            src={headshot}
-            className="about__imgPhoto"
-            alt="alt-text"
-          />
+        <div className="about__container--wrapper">
+          <p className="about__text">
+            Born and raised in BC, I grew up just outside of Vancouver. I
+            currently live, work and play in the Socan Valley, just outside of
+            Nelson. I was brought here by a calling and opportunity to live
+            rurally and become a farmer...
+          </p>
+          <div className="about__imgContainer">
+            <img src={headshot} className="about__imgPhoto" alt="alt-text" />
+          </div>
         </div>
       </section>
       <section className="details__body">
-        <h3>contact</h3>
-        <h3>resume</h3>
+        <h3 className="details__email">contact</h3>
+        <h3 className="details__resume">resume</h3>
       </section>
     </main>
   );

@@ -44,7 +44,7 @@
 }
 .projects {
     &__body {
-        height: 40vh;
+        height: auto;
         background-color: $secondaryoffWhite;
         font-family: $font-stackB;
         padding: 2rem 1rem;   
@@ -72,14 +72,15 @@
         height: 28rem;
         // border: 1px solid $primaryBlack;
         border-radius: 1rem;
-        box-shadow: 2px 2px 2px;
+        box-shadow: $shadow;
         background-color: white;
     }
   
 }
 .about {
     &__body {
-        height: 30vh;
+        height: auto;
+        
         font-family: $font-stackB;
         padding: 2rem 1rem;
     }
@@ -94,18 +95,26 @@
         margin-top: 1.5rem;
         width: 20rem;
     }
+    &__container--wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items:center;
+    }
+    &__text {
+        max-width: 46rem;
+        margin: 2rem;
+    }
     &__imgContainer {
-        width: 7rem;
-        height: 9rem;
-        border: 1px solid black;
+
     }
     &__imgPhoto {
         // background-image:url("../../assets/images/portfolio-copy.jpg");
         // background-repeat: no-repeat;
-        width:7rem;
-        
-        
-        
+        max-width:24rem;
+        border-radius: 2px;
+        box-shadow: $shadow;
+ 
     }
 }
 .details {
