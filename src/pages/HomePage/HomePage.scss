@@ -7,13 +7,18 @@
 .homePage {
     &__body {
         width: 100%;
-        margin: 0 auto;
+        
     }
 }
 .head {
     &__body {
         height: 50rem;
+        max-width: 50rem;
         margin: 0 auto;
+
+        @include tablet {
+            max-width: 60rem;
+        }
     }
     &__title-position {
         width:100%;
@@ -66,21 +71,41 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        gap: 2rem;
     }
-    &__card1 {
+    &__card{
         width: 22rem;
         height: 28rem;
+        margin-bottom: 1rem;
         // border: 1px solid $primaryBlack;
         border-radius: 1rem;
         box-shadow: $shadow;
         background-color: white;
+    }
+
+    &__card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 24rem;
+    }
+    // &__card2-title {
+    //     margin-top: 1.7rem;
+    // }
+    &__card1-text {
+        font-size:1.5rem;
+    }
+    &__card2-text {
+        font-size: 1.5rem;
+    }
+    &__card3-text {
+        font-size: 1.5rem;
     }
   
 }
 .about {
     &__body {
         height: auto;
-        
         font-family: $font-stackB;
         padding: 2rem 1rem;
     }
@@ -114,12 +139,11 @@
         max-width:24rem;
         border-radius: 2px;
         box-shadow: $shadow;
- 
     }
 }
 .details {
     &__body {
-        height: 20vh;
+        height: 20rem;
         background-color: $secondaryoffWhite;
     }
 }
