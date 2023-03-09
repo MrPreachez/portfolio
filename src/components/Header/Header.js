@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import DownloadPdf from "../DownloadPdf/DownloadPdf";
 import "./Header.scss";
 
 function Header() {
@@ -18,7 +19,7 @@ function Header() {
             <h4 className="nav__contact">Contact</h4>
           </Link>
 
-          <button className="nav__resumeBtn">Resume</button>
+          <DownloadPdf/>
         </div>
       </div>
       </div>

@@ -3,3 +3,24 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/typography";
 @use "../../styles/partials/variables" as *;
+
+
+.footer {
+    &__section {
+        background-color: $secondaryoffWhite;
+        padding: 2rem;
+        height: 16rem;
+        
+    }
+    &__block1 { 
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 4rem;
+        gap: 2rem;
+
+
+    }
+    &__email--link {
+        color: black;
+    }
+}

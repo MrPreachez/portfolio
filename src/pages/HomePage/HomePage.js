@@ -1,6 +1,7 @@
 import "./HomePage.scss";
 import headshot from "../../assets/images/portfolio-copy.jpg";
 import { Link } from "react-router-dom";
+import DownloadPdf from "../../components/DownloadPdf/DownloadPdf";
 
 function HomePage() {
   return (
@@ -71,13 +72,6 @@ function HomePage() {
             <img src={headshot} className="about__imgPhoto" alt="alt-text" />
           </div>
         </div>
-      </section>
-      <section className="details__body">
-        <Link to="/contact">
-          <h3 className="details__email">contact</h3>
-        </Link>
-
-        <h3 className="details__resume">resume</h3>
       </section>
     </main>
   );
