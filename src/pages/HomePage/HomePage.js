@@ -1,7 +1,7 @@
 import "./HomePage.scss";
 import headshot from "../../assets/images/portfolio-copy.jpg";
 import { Link } from "react-router-dom";
-import DownloadPdf from "../../components/DownloadPdf/DownloadPdf";
+ 
 
 function HomePage() {
   return (
