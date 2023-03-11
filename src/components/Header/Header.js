@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Burger from "../Burger/Burger";
 import DownloadPdf from "../DownloadPdf/DownloadPdf";
 import "./Header.scss";
 
@@ -12,13 +13,13 @@ function Header() {
       </Link>
       <div className="nav__container">
         <div className="nav__links--wrapper">
-          <Link to="/about" className="nav__link">
+          {/* <Link to="/about" className="nav__link">
             <h4 className="nav__about">About</h4>
           </Link>
           <Link to="/contact" className="nav__link">
             <h4 className="nav__contact">Contact</h4>
-          </Link>
-
+          </Link> */}
+    <Burger/>
           <DownloadPdf/>
         </div>
       </div>

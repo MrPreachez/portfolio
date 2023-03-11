@@ -1,7 +1,6 @@
 import "./HomePage.scss";
 import headshot from "../../assets/images/portfolio-copy.jpg";
 import { Link } from "react-router-dom";
- 
 
 function HomePage() {
   return (
@@ -30,7 +29,9 @@ function HomePage() {
         <div className="projects__card--wrapper">
           <div className="projects__card-container ">
             <div className="projects__card1 projects__card"></div>
-            <h3 className="projects__card1-title projects__card-title">Melder</h3>
+            <h3 className="projects__card1-title projects__card-title">
+              Melder
+            </h3>
             <p className="projects__card1-text">
               Qualitative survey analysis using OpenAi api. React, Node.js,
               Express, Knex, MySQL, RESTful api.
@@ -38,7 +39,9 @@ function HomePage() {
           </div>
           <div className="projects__card-container ">
             <div className="projects__card2 projects__card"></div>
-            <h3 className="projects__card2-title projects__card-title">BrainFlix</h3>
+            <h3 className="projects__card2-title projects__card-title">
+              BrainFlix
+            </h3>
             <p className="projects__card2-text">
               Brainflix was my first React SPA. It uses React, Sass, Node.js,
               Express and RESTful api.{" "}
@@ -46,14 +49,16 @@ function HomePage() {
           </div>
           <div className="projects__card-container">
             <div className="projects__card3 projects__card"></div>
-            <h3 className="projects__card3-title projects__card-title">Instock</h3>
+            <h3 className="projects__card3-title projects__card-title">
+              Instock
+            </h3>
             <p className="projects__card3-text">
               Group collaborative project... worked with Jira, Figma, React,
               Node.js, Express, Knex, MySQL
             </p>
           </div>
         </div>
-        <div ></div>
+        <div></div>
       </section>
       <section className="about__body">
         <h2 className="about__title">

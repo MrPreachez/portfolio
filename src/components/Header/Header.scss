@@ -5,32 +5,31 @@
 @use "../../styles/partials/variables" as *;
 
 .nav {
-    &__section {
-        background-color: $secondaryoffWhite;
-    }
-    &__limit {
-        max-width: 1080px;
-        margin:0 auto;
-        padding: 2rem;
-        display: flex;
-        justify-content: space-between;
-    }
-    &__links--wrapper {
-        display: flex;
-        justify-content: space-around;
-        align-items: baseline;
-        gap: 1.4rem;
-    }
-    &__link {
-        text-decoration: none;
-        color: black;
-        font-family: $font-stackB;
-    }
-    &__link--logo {
-        font-family: $font-stack;
-    }
-    &__resumeBtn {
-        width: 8rem;
-    }
-
+  &__section {
+    background-color: $secondaryoffWhite;
+  }
+  &__limit {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__links--wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    gap: 1.4rem;
+  }
+  &__link {
+    text-decoration: none;
+    color: black;
+    font-family: $font-stackB;
+  }
+  &__link--logo {
+    font-family: $font-stack;
+  }
+  &__resumeBtn {
+    width: 8rem;
+  }
 }
