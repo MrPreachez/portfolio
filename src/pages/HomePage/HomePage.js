@@ -1,23 +1,40 @@
 import "./HomePage.scss";
 import headshot from "../../assets/images/portfolio-copy.jpg";
-
+import { useSpring, animated as a } from "@react-spring/web";
 
 function HomePage() {
+  const spring1 = useSpring({
+    from: { opacity: 0, x: 200 },
+    to: { opacity: 1, x: 0 },
+    config: { duration: 700 },
+  });
+  const spring2 = useSpring({
+    from: { opacity: 0 }, opacity: 1,
+    config: { duration: 1000 }
+  });  
+  const spring3 = useSpring({
+    from: { opacity: 0, y: 200 },
+    to: { opacity: 1, y: 0 },
+    config: { duration: 700 },
+  });
+
   return (
     <main className="homePage__body">
       <section className="head__body">
         <div className="head__title-position">
-          <h1 className="head__title1">DAMON</h1>
-          <h2 className="head__title2">CHOUINARD</h2>
+          <a.h1 style={spring1} className="head__title1">
+            DAMON
+          </a.h1>
+          <a.h2 style={spring2} className="head__title2">CHOUINARD</a.h2>
         </div>
         <div className="head__description-position">
           <h3 className="head__description-title">Software Developer...</h3>
-          <p className="head__description">
+          <a.p style={spring3} className="head__description">
             Greetings! I've been many things in this life, but here on this page
             let me give you a sense of where I am as a software developer. I
             have skills in the following: html5, CSS3, Sass, Javascript, Dom,
             React, Node.js, Express, Knex, MySQL and RESTful API applications.{" "}
-          </p>
+          </a.p>
         </div>
       </section>
       <section className="projects__body">
