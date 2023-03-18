@@ -1,6 +1,7 @@
 import "./HomePage.scss";
 import headshot from "../../assets/images/portfolio-copy.jpg";
 import { useSpring, useInView, animated as a } from "@react-spring/web";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   const spring1 = useSpring({
@@ -78,7 +79,10 @@ function HomePage() {
         </h2>
         <div className="projects__card--wrapper">
           <div className="projects__card-container ">
-            <div className="projects__card1 projects__card"></div>
+            <Link to={"/project/melder"}>
+              <div className="projects__card1 projects__card"></div>
+            </Link>
+
             <h3 className="projects__card1-title projects__card-title">
               Melder
             </h3>
@@ -88,7 +92,10 @@ function HomePage() {
             </p>
           </div>
           <div className="projects__card-container ">
-            <div className="projects__card2 projects__card"></div>
+            <Link to={"/project/brainflix"}>
+              <div className="projects__card2 projects__card"></div>
+            </Link>
+
             <h3 className="projects__card2-title projects__card-title">
               BrainFlix
             </h3>
@@ -98,7 +105,10 @@ function HomePage() {
             </p>
           </div>
           <div className="projects__card-container">
-            <div className="projects__card3 projects__card"></div>
+            <Link to={"/projects/instock"}>
+              <div className="projects__card3 projects__card"></div>
+            </Link>
+
             <h3 className="projects__card3-title projects__card-title">
               Instock
             </h3>
