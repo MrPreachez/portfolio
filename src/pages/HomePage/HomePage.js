@@ -6,12 +6,12 @@ function HomePage() {
   const spring1 = useSpring({
     from: { opacity: 0, x: 200 },
     to: { opacity: 1, x: 0 },
-    config: {  mass: 4, friction: 100, tension: 200  },
+    config: { mass: 4, friction: 100, tension: 200 },
   });
   const spring2 = useSpring({
     from: { opacity: 0, x: -300 },
     to: { opacity: 1, x: 0 },
-    config: {  mass: 4, friction: 100, tension: 200 },
+    config: { mass: 4, friction: 100, tension: 200 },
   });
   const spring3 = useSpring({
     from: { opacity: 0, y: 200 },
@@ -32,7 +32,6 @@ function HomePage() {
         tension: 300,
       },
     },
-    
   }));
   const [ref1, springs5] = useInView(() => ({
     from: {
@@ -48,9 +47,7 @@ function HomePage() {
         tension: 300,
       },
     },
-    
   }));
-  
 
   return (
     <main className="homePage__body">
