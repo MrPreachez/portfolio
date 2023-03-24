@@ -1,7 +1,11 @@
 import "./ProjectMelder.scss";
 import melder from "../../assets/images/melderCover.png";
+import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
+
+// import melderLoom from "/Melder#2.mp4"
 
 function ProjectMelder() {
+  const videoSrc = { path: "https://youtu.be/xz72h5vzyEI", loaded: false };
   return (
     <>
       <main className="melder__main">
@@ -60,6 +64,7 @@ function ProjectMelder() {
             an endpoint and destructuring the data, but to display the data i
             wanted on the results page i needed to re-examine my approach.
           </p>
+          <VideoPlayer src={videoSrc} />
         </section>
         <section className="melder__details"></section>
       </main>
@@ -68,3 +73,5 @@ function ProjectMelder() {
 }
 
 export default ProjectMelder;
+//For example, I have built out a few projects lately that use Prisma, which is becoming a popular ORM for working with Postgres and NodeJS.<br>
+// I used the projects to sell myself during interviews and highlighted how I can use it, what I learned, and how I can add value to the company that is interviewing me immediately.
