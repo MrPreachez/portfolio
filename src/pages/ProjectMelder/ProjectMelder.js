@@ -2,10 +2,9 @@ import "./ProjectMelder.scss";
 import melder from "../../assets/images/melderCover.png";
 import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
 
-// import melderLoom from "/Melder#2.mp4"
+
 
 function ProjectMelder() {
-  const videoSrc = { path: "https://youtu.be/xz72h5vzyEI", loaded: false };
   return (
     <>
       <main className="melder__main">
@@ -64,7 +63,7 @@ function ProjectMelder() {
             an endpoint and destructuring the data, but to display the data i
             wanted on the results page i needed to re-examine my approach.
           </p>
-          <VideoPlayer src={videoSrc} />
+          <VideoPlayer vidId={"xz72h5vzyEI"} />
         </section>
         <section className="melder__details"></section>
       </main>
