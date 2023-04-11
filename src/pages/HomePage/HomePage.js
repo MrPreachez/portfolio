@@ -78,11 +78,24 @@ function HomePage() {
           <span className="projects__feature" />
         </h2>
         <div className="projects__card--wrapper">
+          {/* SOCIOPEDIA CARD */}
+          <div className="projects__card-container ">
+            <Link to={"/project/sociopedia"}>
+              <div className="projects__card4 projects__card"></div>
+            </Link>
+            <h3 className="projects__card1-title projects__card-title">
+              SocioPedia
+            </h3>
+            <p className="projects__card1-text">
+              Social Media React app with authorization, Redux Toolkit, Material
+              UI, Node.js, MongoDB.
+            </p>
+          </div>
+          {/* MELDER CARD */}
           <div className="projects__card-container ">
             <Link to={"/project/melder"}>
               <div className="projects__card1 projects__card"></div>
             </Link>
-
             <h3 className="projects__card1-title projects__card-title">
               Melder
             </h3>
@@ -91,6 +104,7 @@ function HomePage() {
               Express, Knex, MySQL, RESTful api.
             </p>
           </div>
+          {/* BRAINFLIX CARD */}
           <div className="projects__card-container ">
             <Link to={"/project/brainflix"}>
               <div className="projects__card2 projects__card"></div>
@@ -104,6 +118,7 @@ function HomePage() {
               Express and RESTful api.{" "}
             </p>
           </div>
+          {/* INSTOCK CARD */}
           <div className="projects__card-container">
             <Link to={"/projects/instock"}>
               <div className="projects__card3 projects__card"></div>

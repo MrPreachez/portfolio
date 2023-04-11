@@ -7,6 +7,7 @@ import Contact from './pages/Contact/Contact';
 import ProjectMelder from './pages/ProjectMelder/ProjectMelder';
 import ProjectInstock from './pages/ProjectInstock/ProjectInstock';
 import ProjectBrainflix from './pages/ProjectBrainflix/ProjectBrainflix';
+import ProjectSocio from './pages/ProjectSocio/ProjectSocio';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/project/melder" element={<ProjectMelder/>}/>
         <Route path="/project/instock" element={<ProjectInstock/>}/>
         <Route path="/project/brainflix" element={<ProjectBrainflix/>}/>
+        <Route path="/project/socio" element={<ProjectSocio/>} />
       </Routes>
       <Footer/>
       </BrowserRouter>
