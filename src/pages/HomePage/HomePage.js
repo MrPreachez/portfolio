@@ -80,7 +80,7 @@ function HomePage() {
         <div className="projects__card--wrapper">
           {/* SOCIOPEDIA CARD */}
           <div className="projects__card-container ">
-            <Link to={"/project/sociopedia"}>
+            <Link to={"/project/socio"}>
               <div className="projects__card4 projects__card"></div>
             </Link>
             <h3 className="projects__card1-title projects__card-title">

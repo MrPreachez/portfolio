@@ -4,3 +4,50 @@
 @use "../../styles/partials/typography";
 @use "../../styles/partials/variables" as *;
 
+.brainflix {
+    &__main {
+      max-width: 1080px;
+      // height: 100vh;
+      margin: 0 auto;
+    }
+    &__hero-container {
+      width: 100%;
+      height: auto;
+      margin-top: 2rem;
+    }
+    &__title {
+      font-size: 4rem;
+      font-family: $font-stackB;
+      margin:2rem 0 ;
+    }
+    &__hero--responsive {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @include tablet {
+        flex-direction: row-reverse;
+        
+      }
+    }
+    &__heroImage {
+      width: 90%;
+      margin-bottom: 2rem;
+  
+      @include tablet {
+        max-width: 50rem;
+        margin-left: 2rem;
+      }
+    }
+    &__hero-aside {
+      font-family: $font-stackB;
+      width: 90%;
+      @include tablet {
+        width: 30rem;
+      }
+    }
+    &__overview {
+      margin-top: 2rem;
+    }
+  }
+  
