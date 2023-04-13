@@ -56,7 +56,7 @@ function ProjectSocio() {
             intro into these new tools and has helped me develop a confidence in
             these toolsets that i can build upon further.
           </p>
-          <VideoPlayer vidId={"xz72h5vzyEI"} />
+          <VideoPlayer vidId={"ir6AFm59Y9o"} />
         </section>
         <section className="socio__details"></section>
       </main>
