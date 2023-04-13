@@ -35,7 +35,7 @@
     margin-bottom: 2rem;
 
     @include tablet {
-      width: 34rem;
+      width: 50rem;
       margin-left: 2rem;
     }
   }
@@ -47,6 +47,12 @@
     }
   }
   &__overview {
-    margin-top: 2rem;
+    margin: 2rem;
+    border-top: 1px solid $secondaryGrey
+  }
+  &__subtitle {
+      margin:2rem 0;
+      text-decoration: underline;
+      font-size: 2rem;
   }
 }

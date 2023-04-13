@@ -11,7 +11,7 @@ function ProjectBrainflix() {
           <div className="brainflix__hero-container">
             <h1 className="brainflix__title">Project: Brainflix</h1>
             <div className="brainflix__hero--responsive">
-              <img className="brainflix__heroImage" src={Brainflix} />
+              <img className="brainflix__heroImage" src={Brainflix} alt="Brainflix screenshot"/>
               <p className="brainflix__hero-aside">
                 brainflix is a fullstack Netflix like clone that is built using
                 React, Sass, Node.js, Express and Axios.
@@ -20,7 +20,7 @@ function ProjectBrainflix() {
           </div>
         </section>
         <section className="brainflix__overview">
-          <h4>Project Overview</h4>
+          <h4 className="brainflix__subtitle">Project Overview</h4>
           <p>
             Brainflix was a project I did early on while learning the basics of
             React, Node.js and Axios. I remember this project well as it

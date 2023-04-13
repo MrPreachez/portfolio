@@ -2,8 +2,6 @@ import "./ProjectMelder.scss";
 import melder from "../../assets/images/melderCover.png";
 import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
 
-
-
 function ProjectMelder() {
   return (
     <>
@@ -16,14 +14,16 @@ function ProjectMelder() {
               <p className="melder__hero-aside">
                 Melder is a fullstack qualitative survey analysis tool. It's
                 inspired by my experiences with community engagement, and an
-                interest in AI. It's built with React, Node.js, Express, MySQL
-                and the davinci-003 OpenAi API.
+                interest in AI. It's built with React frontend and styled in
+                Sass. It's backend is built in Node.js with an Express
+                framework, uses a MySQL database with Knex as it ORM. This
+                current example uses OpenAi's davinci-003 model API.
               </p>
             </div>
           </div>
         </section>
         <section className="melder__overview">
-          <h4>Project Overview</h4>
+          <h4 className="melder__subtitle">Project Overview</h4>
           <p>
             The objective with Melder was to create a fullstack web application
             that had real world relevance to my personal experiences. From my
