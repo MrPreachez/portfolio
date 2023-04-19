@@ -4,12 +4,14 @@ function AboutPage() {
   return (
     <div>
       <p>
-        At this point in time I live in Winlaw BC, 45 mins outside of Nelson.
-        I'm a father, stepfather and partner with strong roots in food and
-        agriculture. Creative processes, recreating in nature and many things
-        tech(primarily software dev) are what excite me these days. I'm a doer
-        that loves entrepreneurship, collaboration, regenerative agriculture and
-        cultivating collective experiences.   '{" "}
+        I'm a father and a partner with strong roots in food, agriculture and
+        community development. Creative processes, learning new things,
+        recreating in nature and most things tech are what excite me these days.
+        I enjoy using the intersections of my interests as fuel for learning.
+        I'm a self motivated doer that loves collaboration, regenerative
+        agriculture and cultivating collective experiences. Generally if I'm not
+        in my office, you can find me skiing, biking, hiking or working on the
+        farm.'{" "}
       </p>
     </div>
   );

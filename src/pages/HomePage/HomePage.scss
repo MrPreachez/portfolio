@@ -5,165 +5,172 @@
 @use "../../styles/partials/variables" as *;
 
 .homePage {
-    &__body {
-        width: 100%;
-        
-    }
+  &__body {
+    width: 100%;
+  }
 }
 .head {
-    &__body {
-        height: 50rem;
-        max-width: 50rem;
-        margin: 0 auto;
+  &__body {
+    height: 50rem;
+    max-width: 50rem;
+    margin: 0 auto;
 
-        @include tablet {
-            max-width: 60rem;
-        }
+    @include tablet {
+      max-width: 60rem;
     }
-    &__title-position {
-        width:100%;
-        display:flex;
-        flex-direction: column;
-        align-items: flex-end;
-        margin-top: 20rem;
-        
-    }
-    &__title1 {
-        font-size: 6rem;
-        font-family: $font-stack;
-        font-weight: 600;
-        // margin-right:10rem;
-        width: 90%;
-        
-    }
-    &__title2 {
-        margin-right: 2rem;
-    }
-    &__description-position {
-        margin: 10rem 0 0 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content:space-around;
-        align-items: flex-start;
-        max-width: 30rem;
-    }
+  }
+  &__title-position {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 20rem;
+  }
+  &__title1 {
+    font-size: 6rem;
+    font-family: $font-stack;
+    font-weight: 600;
+    // margin-right:10rem;
+    width: 90%;
+  }
+  &__title2 {
+    margin-right: 2rem;
+  }
+  &__description-position {
+    margin: 10rem 0 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 30rem;
+  }
 }
 .projects {
-    &__body {
-        height: auto;
-        background-color: $secondaryoffWhite;
-        font-family: $font-stackB;
-        padding: 2rem 1rem;   
+  &__body {
+    height: auto;
+    background-color: $secondaryoffWhite;
+    font-family: $font-stackB;
+    padding: 2rem 1rem;
+    @include tablet {
+        padding: 8rem 2rem;
     }
-    &__title {
-        margin: 2rem ;
-        display: flex;
-        justify-content: center;
-        gap: 1.5rem;
-    }
-  
-    &__feature{
-        border-top: 1px solid $secondaryGrey;
-        margin-top: 1.5rem;
-        width: 20rem;
-    }
-    &__card--wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-    }
-    &__card{
-        width: 22rem;
-        height: 28rem;
-        margin-bottom: 1rem;
-        // border: 1px solid $primaryBlack;
-        border-radius: 1rem;
-        box-shadow: $shadow;
-        background-color: white;
-        background-image: url("../../assets/images/melderCover.png") ;
-        background-repeat: no-repeat;
-        background-size:cover;
-        background-position: center;
-    }
+  }
+  &__title {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
 
-    &__card-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 24rem;
-    }
-    // &__card2-title {
-    //     margin-top: 1.7rem;
-    // }
-    &__card1-text {
-        font-size:1.5rem;
-    }
-    &__card2-text {
-        font-size: 1.5rem;
-    }
-    &__card2 {
-        background-image: url("../../assets/images/Brainflix.png") ;
-        background-repeat: no-repeat;
-        background-size:cover;
-        background-position: center;
-    }
-    &__card3-text {
-        font-size: 1.5rem;
-    }
-    &__card4-text {
-        font-size: 1.5rem;
-    }
-    &__card4 {
-        background-image: url("../../assets/images/Sociopedia.png") ;
-        background-repeat: no-repeat;
-        background-size:cover;
-        background-position: center;
-    }
-  
+  &__feature {
+    border-top: 1px solid $secondaryGrey;
+    margin-top: 1.5rem;
+    width: 20rem;
+  }
+  &__card--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  &__card {
+    width: 22rem;
+    height: 28rem;
+    margin-bottom: 1rem;
+    // border: 1px solid $primaryBlack;
+    border-radius: 1rem;
+    box-shadow: $shadow;
+    background-color: white;
+    background-image: url("../../assets/images/melderCover.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 24rem;
+  }
+  // &__card2-title {
+  //     margin-top: 1.7rem;
+  // }
+  &__card1-text {
+    font-size: 1.5rem;
+  }
+  &__card2-text {
+    font-size: 1.5rem;
+  }
+  &__card2 {
+    background-image: url("../../assets/images/Brainflix.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  &__card3-text {
+    font-size: 1.5rem;
+  }
+  &__card3 {
+    background-image: url("../../assets/images/InstockMain.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  &__card4-text {
+    font-size: 1.5rem;
+  }
+  &__card4 {
+    background-image: url("../../assets/images/Sociopedia.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
 .about {
-    &__body {
-        height: auto;
-        font-family: $font-stackB;
-        padding: 2rem 1rem;
+  &__body {
+    height: auto;
+    font-family: $font-stackB;
+    padding: 2rem 1rem;
+    @include tablet {
+        padding: 8rem 2rem;
     }
-    &__title {
-        margin: 2rem ;
-        display: flex;
-        justify-content: center;
-        gap: 1.5rem;
-    }
-    &__feature{
-        border-top: 1px solid $secondaryGrey;
-        margin-top: 1.5rem;
-        width: 20rem;
-    }
-    &__container--wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items:center;
-    }
-    &__text {
-        max-width: 46rem;
-        margin: 2rem;
-    }
-    &__imgContainer {
+  }
+  &__title {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  &__feature {
+    border-top: 1px solid $secondaryGrey;
+    margin-top: 1.5rem;
+    width: 20rem;
+  }
+  &__container--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  &__text {
+    max-width: 46rem;
+    margin: 2rem;
+  }
 
-    }
-    &__imgPhoto {
-        // background-image:url("../../assets/images/portfolio-copy.jpg");
-        // background-repeat: no-repeat;
-        max-width:24rem;
-        border-radius: 2px;
-        box-shadow: $shadow;
-    }
+  &__imgPhoto {
+    // background-image:url("../../assets/images/portfolio-copy.jpg");
+    // background-repeat: no-repeat;
+    max-width: 24rem;
+    border-radius: 2px;
+    box-shadow: $shadow;
+  }
 }
+
 .details {
-    &__body {
-        height: 20rem;
-        background-color: $secondaryoffWhite;
-    }
+  &__body {
+    height: 20rem;
+    background-color: $secondaryoffWhite;
+  }
 }

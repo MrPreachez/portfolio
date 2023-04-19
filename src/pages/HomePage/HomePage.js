@@ -2,8 +2,11 @@ import "./HomePage.scss";
 import headshot from "../../assets/images/portfolio-copy.jpg";
 import { useSpring, useInView, animated as a } from "@react-spring/web";
 import { Link } from "react-router-dom";
+import React from "react";
 
-function HomePage() {
+
+const HomePage = React.forwardRef(({}, ref2) => {
+  
   const spring1 = useSpring({
     from: { opacity: 0, x: 200 },
     to: { opacity: 1, x: 0 },
@@ -64,14 +67,15 @@ function HomePage() {
         <div className="head__description-position">
           <h3 className="head__description-title">Software Developer...</h3>
           <a.p style={spring3} className="head__description">
-            Greetings! I've been many things in this life, but here on this page
-            let me give you a sense of where I am as a software developer. I
-            have skills in the following: html5, CSS3, Sass, Javascript, Dom,
-            React, Node.js, Express, Knex, MySQL and RESTful API applications.{" "}
+            Greetings! Welcome to my portfolio site, here you can get a sense of
+            who I am, my skills and what I'm working on. As a software developer,
+            you'll see I have skills in the following: html, CSS, Sass, Javascript, DOM,
+            React, Node.js, Express, Knex, Mongoose, MySQL, MongoDB, Redux Toolkit
+            RESTful API applications and more, actually, I'm learning more all the time.{" "}
           </a.p>
         </div>
       </section>
-      <section className="projects__body">
+      <section className="projects__body" ref={ref2} id="projects">
         <h2 className="projects__title">
           <span className="projects__feature" />
           Projects
@@ -120,7 +124,7 @@ function HomePage() {
           </div>
           {/* INSTOCK CARD */}
           <div className="projects__card-container">
-            <Link to={"/projects/instock"}>
+            <Link to={"/project/instock"}>
               <div className="projects__card3 projects__card"></div>
             </Link>
 
@@ -161,6 +165,6 @@ function HomePage() {
       </section>
     </main>
   );
-}
+})
 
 export default HomePage;
