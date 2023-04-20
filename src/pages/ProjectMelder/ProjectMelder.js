@@ -1,6 +1,7 @@
 import "./ProjectMelder.scss";
 import melder from "../../assets/images/melderCover.png";
 import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
+import { Link } from "react-router-dom";
 
 function ProjectMelder() {
   return (
@@ -19,6 +20,20 @@ function ProjectMelder() {
                 framework, uses a MySQL database with Knex as it ORM. This
                 current example uses OpenAi's davinci-003 model API.
               </p>
+            </div>
+            <div className="melder__gitLink-layout">
+              <Link
+                className="melder__gitLink1"
+                to="https://github.com/MrPreachez/capstone-melder"
+              >
+                Github: Melder/Frontend
+              </Link>
+              <Link
+                className="melder__gitLink2"
+                to="https://github.com/MrPreachez/capstone-melder-api"
+              >
+                Github: Melder/Backend
+              </Link>
             </div>
           </div>
         </section>
@@ -65,7 +80,8 @@ function ProjectMelder() {
             to examine the efficiency of my api call and my understanding of
             querying the database. The reason why this might have been the most
             rewarding experience of this project was the opportunity to explore
-            a problem from various angles, see the result and continue working through until a more efficient solution was found.  
+            a problem from various angles, see the result and continue working
+            through until a more efficient solution was found.
           </p>
           <VideoPlayer vidId={"xz72h5vzyEI"} />
         </section>

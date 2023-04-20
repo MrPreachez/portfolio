@@ -46,6 +46,17 @@
       width: 30rem;
     }
   }
+  &__gitLink-layout {
+    display: flex;
+    flex-direction: column;
+  }
+  &__gitLink1 {
+    padding-top: 1rem;
+    text-decoration: none;
+  }
+  &__gitLink2{
+    text-decoration: none;
+  }
   &__overview {
     margin: 2rem;
     border-top: 1px solid $secondaryGrey

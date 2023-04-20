@@ -1,6 +1,7 @@
 import "./ProjectSocio.scss";
 import SocioPedia from "../../assets/images/Sociopedia.png";
 import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
+import { Link } from "react-router-dom";
 
 function ProjectSocio() {
   return (
@@ -20,7 +21,13 @@ function ProjectSocio() {
                 styled with Material UI components . It has a Node.js backend
                 that uses an Express framework and a MongoDB Database with Mongoose.js as its ODM.
               </p>
-            </div>
+              </div>
+              <div className="socio__gitLink-layout">
+                 <Link className="socio__gitLink1" to="https://github.com/MrPreachez/social_app-client">Github: Sociopedia/Frontend</Link>
+              <Link className="socio__gitLink2" to="https://github.com/MrPreachez/social-app-server">Github: Sociopedia/Backend</Link>
+            
+              </div>
+             
           </div>
         </section>
         <section className="socio__overview">

@@ -67,10 +67,10 @@ const HomePage = forwardRef(({}, ref2) => {
           <a.p style={spring3} className="head__description">
             Welcome to my portfolio site, since you're here, feel free get a
             sense of who I am, my skills and what I'm working on. As a software
-            developer, you'll see I have skills in the following: html, CSS,
+            developer, my foundational skills are in the following: html, CSS,
             Sass, Javascript, DOM, React, Node.js, Express, Knex, Mongoose,
-            MySQL, MongoDB, Redux Toolkit RESTful API applications and more,
-            actually, I'm learning more all the time.{" "}
+            MySQL, MongoDB, Redux Toolkit RESTful API applications and more.
+            Actually, I'm learning all the time.{" "}
           </a.p>
         </div>
       </section>
@@ -148,8 +148,7 @@ const HomePage = forwardRef(({}, ref2) => {
           <a.p ref={ref} style={springs4} className="about__text">
             Born and raised in BC, I grew up just outside of Vancouver. I
             currently live, work and play in the Socan Valley, just outside of
-            Nelson. I was brought here by a calling and opportunity to live
-            rurally and become a farmer...<Link to="/about">more</Link>
+            Nelson...<Link to="/about">more</Link>
           </a.p>
           <div className="about__imgContainer">
             <a.img
