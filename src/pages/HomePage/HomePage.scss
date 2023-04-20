@@ -11,12 +11,13 @@
 }
 .head {
   &__body {
-    height: 50rem;
+    
     max-width: 50rem;
-    margin: 0 auto;
+    margin: 0 auto 6rem auto;
 
     @include tablet {
       max-width: 60rem;
+      height: 50rem;
     }
   }
   &__title-position {
@@ -24,25 +25,46 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: 20rem;
+    margin-top: 10rem;
+    
+    @include tablet {
+      margin-top: 20rem; 
+    }
   }
+
   &__title1 {
     font-size: 6rem;
     font-family: $font-stack;
     font-weight: 600;
-    // margin-right:10rem;
     width: 90%;
   }
   &__title2 {
     margin-right: 2rem;
+    
   }
   &__description-position {
-    margin: 10rem 0 0 2rem;
+    margin: 6rem 0 0 2rem;
+    padding: 0 0 6rem 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
     max-width: 30rem;
+    @include tablet {
+      margin: 10rem 0 0 2rem;
+      
+    }
+  }
+  &__description-title {
+    padding-bottom: 1rem;
+  }
+  &__description {
+    text-align: left;
+    padding-left: 1rem;
+
+    @include tablet {
+      padding-left: 2rem;
+    }
   }
 }
 .projects {
@@ -50,7 +72,7 @@
     height: auto;
     background-color: $secondaryoffWhite;
     font-family: $font-stackB;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 6rem 1rem;
     @include tablet {
         padding: 8rem 2rem;
     }
@@ -132,7 +154,7 @@
   &__body {
     height: auto;
     font-family: $font-stackB;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 6rem 1rem;
     @include tablet {
         padding: 8rem 2rem;
     }
@@ -160,8 +182,6 @@
   }
 
   &__imgPhoto {
-    // background-image:url("../../assets/images/portfolio-copy.jpg");
-    // background-repeat: no-repeat;
     max-width: 24rem;
     border-radius: 2px;
     box-shadow: $shadow;

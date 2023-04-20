@@ -3,3 +3,38 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/typography";
 @use "../../styles/partials/variables" as *;
+
+.aboutPage {
+  &__body {
+    max-width: 1080px;
+    min-height: 85vh;
+    margin: 0 auto;
+    padding: 4rem;
+  }
+  &__title {
+    @include tablet {
+      padding-bottom: 4rem;
+    }
+  }
+  &__paragraph1 {
+    @include tablet {
+      text-align: left;
+    }
+  }
+
+  &__layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+  &__text-contain {
+    margin: 2rem;
+  }
+  &__profileImg {
+    max-width: 30rem;
+  }
+}

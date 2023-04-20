@@ -2,11 +2,9 @@ import "./HomePage.scss";
 import headshot from "../../assets/images/portfolio-copy.jpg";
 import { useSpring, useInView, animated as a } from "@react-spring/web";
 import { Link } from "react-router-dom";
-import React from "react";
+import { forwardRef } from "react";
 
-
-const HomePage = React.forwardRef(({}, ref2) => {
-  
+const HomePage = forwardRef(({}, ref2) => {
   const spring1 = useSpring({
     from: { opacity: 0, x: 200 },
     to: { opacity: 1, x: 0 },
@@ -67,11 +65,12 @@ const HomePage = React.forwardRef(({}, ref2) => {
         <div className="head__description-position">
           <h3 className="head__description-title">Software Developer...</h3>
           <a.p style={spring3} className="head__description">
-            Greetings! Welcome to my portfolio site, here you can get a sense of
-            who I am, my skills and what I'm working on. As a software developer,
-            you'll see I have skills in the following: html, CSS, Sass, Javascript, DOM,
-            React, Node.js, Express, Knex, Mongoose, MySQL, MongoDB, Redux Toolkit
-            RESTful API applications and more, actually, I'm learning more all the time.{" "}
+            Welcome to my portfolio site, since you're here, feel free get a
+            sense of who I am, my skills and what I'm working on. As a software
+            developer, you'll see I have skills in the following: html, CSS,
+            Sass, Javascript, DOM, React, Node.js, Express, Knex, Mongoose,
+            MySQL, MongoDB, Redux Toolkit RESTful API applications and more,
+            actually, I'm learning more all the time.{" "}
           </a.p>
         </div>
       </section>
@@ -150,7 +149,7 @@ const HomePage = React.forwardRef(({}, ref2) => {
             Born and raised in BC, I grew up just outside of Vancouver. I
             currently live, work and play in the Socan Valley, just outside of
             Nelson. I was brought here by a calling and opportunity to live
-            rurally and become a farmer...
+            rurally and become a farmer...<Link to="/about">more</Link>
           </a.p>
           <div className="about__imgContainer">
             <a.img
@@ -165,6 +164,6 @@ const HomePage = React.forwardRef(({}, ref2) => {
       </section>
     </main>
   );
-})
+});
 
 export default HomePage;
