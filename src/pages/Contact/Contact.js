@@ -29,39 +29,39 @@ function Contact() {
 
   return (
     <main className="contact__section">
-      <h2>Contact Damon by email</h2>
+      <h2 className="contact__title">Contact Damon by email</h2>
       <form ref={form} onSubmit={sendEmail} className="contact__form">
         <div className="contact__subject--wrapper">
-          <label className="contact__subject">Subject</label>
+          <label className="contact__subject contact__label">Subject</label>
           <input
-            className="contact__subject-field"
+            className="contact__subject-field contact__field"
             type="text"
             placeholder="ENTER MESSAGE SUBJECT"
             name="from_subject"
           />
         </div>
         <div className="contact__name--wrapper">
-          <label className="contact__name">Name</label>
+          <label className="contact__name contact__label">Name</label>
           <input
-            className="contact__name-field"
+            className="contact__name-field contact__field"
             type="text"
             placeholder="ENTER YOUR NAME"
             name="from_name"
           />
         </div>
         <div className="contact__email--wrapper">
-          <label className="contact__email">Email</label>
+          <label className="contact__email contact__label">Email</label>
           <input
-            className="contact__email-field"
+            className="contact__email-field contact__field"
             type="email"
             placeholder="ENTER YOUR EMAIL"
             name="from_email"
           />
         </div>
         <div className="contact__message--wrapper">
-          <label className="contact__message">Message</label>
+          <label className="contact__message contact__label">Message</label>
           <textarea
-            className="contact__message-field"
+            className="contact__message-field contact__field"
             placeholder="ENTER MESSAGE HERE"
             name="message"
           />

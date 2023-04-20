@@ -76,5 +76,3 @@ function ProjectMelder() {
 }
 
 export default ProjectMelder;
-//For example, I have built out a few projects lately that use Prisma, which is becoming a popular ORM for working with Postgres and NodeJS.<br>
-// I used the projects to sell myself during interviews and highlighted how I can use it, what I learned, and how I can add value to the company that is interviewing me immediately.

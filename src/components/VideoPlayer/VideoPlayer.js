@@ -6,6 +6,7 @@ function VideoPlayer({vidId}) {
       <iframe
         className="video__iframe"
         src={`https://www.youtube.com/embed/${vidId}`}
+        title={vidId}
         controls
         type="video/mp4"
       >
