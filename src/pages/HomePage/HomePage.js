@@ -65,9 +65,9 @@ const HomePage = forwardRef(({}, ref2) => {
         <div className="head__description-position">
           <h3 className="head__description-title">Software Developer...</h3>
           <a.p style={spring3} className="head__description">
-            Welcome to my portfolio site, since you're here, feel free get a
+            Welcome to my portfolio site, I hope it offers a 
             sense of who I am, my skills and what I'm working on. As a software
-            developer, my foundational skills are in the following: html, CSS,
+            developer, I have foundational skills in the following: html, CSS,
             Sass, Javascript, DOM, React, Node.js, Express, Knex, Mongoose,
             MySQL, MongoDB, Redux Toolkit RESTful API applications and more.
             Actually, I'm learning all the time.{" "}
@@ -118,7 +118,7 @@ const HomePage = forwardRef(({}, ref2) => {
             </h3>
             <p className="projects__card2-text">
               Brainflix was my first React SPA. It uses React, Sass, Node.js,
-              Express and RESTful api.{" "}
+              Express and RESTful API.{" "}
             </p>
           </div>
           {/* INSTOCK CARD */}
