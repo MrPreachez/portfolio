@@ -39,49 +39,94 @@ function ProjectMelder() {
         </section>
         <section className="melder__overview">
           <h4 className="melder__subtitle">Project Overview</h4>
-          <p>
-            The objective with Melder was to create a fullstack web application
-            that had real world relevance to my personal experiences. From my
-            community development projects and event management work, I've had
-            plenty of occassions where i've had to make sense of large amounts
-            of group feedback. I decided to use this opportunity to create an
-            application that utilized the OpenAi api to summarize qualitative
-            inputs and offer useful feedback to the user group. <br /> The
-            initial presentation of the project was created as a proof of
-            concept. It has a React front end in which users can create a
-            project that includes a focus question and the language model
-            prompt. The project is created and then users are directed towards
-            an input page. The input page gathers the feedback responses,
-            refreshing each time until all the desired responses are gathered.
-            The project is submitted and then users are directed towards a page
-            that displays the generated response. In order to get this
-            functionality I built the site with a react front end, making axios
-            calls to a node.js server for data transfers. The server uses and
-            Express.js framework with Knex.js for sql queries to the MySQL
-            database. Each time a project is created, a new table is created in
-            the database. The projects ID serves as the primary key for the
-            relational database. Each users input is gathered in a table
-            connected to the project key. At this point we have two tables. The
-            next step in the data flow was to determine how to filter the
-            necessary inputs, join them with the prompt structure and send them
-            off to the API. As well, we needed to create a path for the
-            genearated response to store the AI generated response. This was
-            definitely the most challenging and rewarding aspect of the project.
-            In mapping out all the steps, breaking it down into pieces, and
-            working through step by step, I eventually got the initial
-            functionality working, though needed to revisit to fine tune again.
-            With the basic functionality coming together, the next steps
-            involved some learning curves in working with databases and api's.
-            Before this project i was familiar with making an API call to an
-            endpoint and destructuring the data, but to display the data i
-            wanted on the results page i needed to re-examine my approach and
-            further my understanding. At this point I started to realize the
-            variety of ways data could be called within this application and had
-            to examine the efficiency of my api call and my understanding of
-            querying the database. The reason why this might have been the most
-            rewarding experience of this project was the opportunity to explore
-            a problem from various angles, see the result and continue working
-            through until a more efficient solution was found.
+          <p className="melder__paragraph">
+            <span className="melder__subtitles">
+              Project Name and Overview:{" "}
+            </span>{" "}
+            Melder - Fullstack Web Application for summarizing qualitative
+            inputs using the OpenAI API.
+            <br />
+            <span className="melder__subtitles">Problem Statement:</span> Melder
+            was created to explore the feasability of processing large sets of
+            qualitative feedback in engagement scenarios related community
+            development projects and event management work I had done in the
+            past.
+            <br />
+            <span className="melder__subtitles">Project Goals:</span> The goal
+            of the project was to create a proof of concept functional fullstack
+            web application that could summarize qualitative inputs and offer
+            useful feedback to user groups. <br />
+            <span className="melder__subtitles">Technical Description:</span>
+            The project is built on a React SPA front-end that makes axios calls
+            to a Node.js server for data transfers. The server uses the
+            Express.js framework with Knex.js for SQL queries to the MySQL
+            database. Each time a user creates a new project or question, a new
+            table is created in the database. The projects ID serves as the
+            primary key for the relational database when respondents answers are
+            stored in a seperate table. When the project creator submits the
+            project, the relevant data is filtered and stored in JSON format,
+            then loaded into the API call to OpenAI's text-davinci-003 api. The
+            response is awaited, then stored in the response table, again
+            attached by the primary key. The front end then displays and calls
+            this data as needed.
+            <br />
+            <span className="melder__subtitles">User Interface:</span> The
+            initial presentation of the project is created as a proof of concept
+            with a React front-end in which users can create a project that
+            includes a focus question and the language model prompt. The project
+            is created and then users are directed towards an input page. The
+            input page gathers the feedback responses, refreshing each time
+            until all the desired responses are gathered. The project is
+            submitted and then users are directed towards a page that displays
+            the generated response. On the home page, you can interact with past
+            inputs and responses.
+            <br />
+            <span className="melder__subtitles">Features:</span> The project
+            allows users to create a project with a focus question and a
+            language model prompt. Users can then input their feedback
+            responses, and the application utilizes the OpenAI API to summarize
+            the qualitative inputs and offer useful feedback to the user group.
+            <br />
+            <span className="melder__subtitles">Challenges: </span>The most
+            challenging aspect of the project was figuring out how to query and
+            filter the necessary inputs, join them with the prompt structure,
+            and send them to the OpenAI API. As one of my first projects working
+            with a database, I had to learn a lot about querying specific data
+            from different locations within the app and storing incoming data.
+            However, my lightbulb moment on the project came when I learned the
+            power and efficiency of making a 'Join' query. After numerous
+            attempts of making multiple Axios calls for the results page and
+            crashing the site, I eventually realized the benefits of a proper
+            query call in this instance.
+            <br />
+            <span className="melder__subtitles">Results and Impact:</span> The
+            project resulted in a functional fullstack web application that can
+            summarize qualitative inputs and offer useful feedback to user
+            groups. This application demonstrates nicely the use case for
+            community development projects and event management work where large
+            amounts of group feedback need to be analyzed and summarized.
+            <br />
+            <span className="melder__subtitles">Conclusion:</span> Melder is a
+            functional and useful fullstack web application that showcases many
+            of my skills in working with React, Node.js, Express.js, Knex.js,
+            MySQL, and the OpenAI API. Designed to streamline group feedback
+            processes, Melder uses the OpenAI API to summarize qualitative
+            feedback, allowing users to make sense of large amounts of data and
+            generate useful feedback for their projects. As a showcase project,
+            Melder demonstrates my ability to solve complex problems and
+            iteratively refine and improve on solutions. Working on Melder
+            taught me valuable lessons about working with databases and APIs,
+            and showed me the importance of breaking down complex problems into
+            smaller pieces and iterating on solutions.
+            <br />
+            <span className="melder__subtitles">Next Steps:</span>In the future,
+            I plan to expand the Melder project by adding new features or
+            functionality, such as authentication and authorization. This would
+            enable users to edit or delete their projects and feedback
+            responses, with the option of regenerating a response. I also
+            recognize the need for improving the efficiency of the data flow and
+            API calls. Finally, I intend to set up testing for this application
+            to ensure its reliability and stability.
           </p>
           <VideoPlayer vidId={"xz72h5vzyEI"} />
         </section>
