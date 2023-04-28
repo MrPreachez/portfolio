@@ -128,7 +128,7 @@ function ProjectMelder() {
             API calls. Finally, I intend to set up testing for this application
             to ensure its reliability and stability.
           </p>
-          <VideoPlayer vidId={"xz72h5vzyEI"} />
+          <VideoPlayer vidId={"Wqyxq7iJUMo"} />
         </section>
         <section className="melder__details"></section>
       </main>
